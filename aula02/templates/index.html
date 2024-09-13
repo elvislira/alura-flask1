@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }}</title>
+</head>
+<body>
+    <h1>{{ titulo }}</h1>
+
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Console</th>
+        </thead>
+
+        <tbody>
+            {% for jogo in jogos %}
+                <tr>
+                    <td>{{ jogo.nome }}</td>
+                    <td>{{ jogo.categoria }}</td>
+                    <td>{{ jogo.console }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Qtd jogos</th>
+                <td>{{ jogos | length }} jogos</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
