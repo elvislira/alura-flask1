@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from models.jogo import Jogo
 
 
@@ -40,11 +40,7 @@ def criar():
 
     lista_jogos.append(jogo)
 
-    return render_template(
-        'index.html',
-        titulo = "Todos os Jogos",
-        jogos = lista_jogos
-    )
+    return redirect('/')
 
 if __name__ == '__main__':
     app.run(debug=True)
