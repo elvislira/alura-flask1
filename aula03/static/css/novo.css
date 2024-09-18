@@ -2,3 +2,35 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.formulario label {
+    display: block;
+    width: 100%;
+}
+
+.formulario input {
+    width: 100%;
+}
+
+.container-botao {
+    display: flex;
+    align-items: self-end;
+    justify-content: right;
+}
+
+.container-botao button {
+    width: 30%;
+    margin: 0;
+}

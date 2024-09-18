@@ -1,0 +1,22 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tabela {
+    width: 80%;
+}
+
+.tabela thead {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.tabela td {
+    padding: 5px;
+}
